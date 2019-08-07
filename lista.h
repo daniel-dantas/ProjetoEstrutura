@@ -1,10 +1,3 @@
-/* 
- * File:   lista.h
- * Author: daniel
- *
- * Created on 31 de Julho de 2019, 23:21
- */
-
 typedef struct nodo Nodo;
 typedef struct lista Lista;
 
