@@ -38,7 +38,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/fila.o \
 	${OBJECTDIR}/lista.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/pilha.o
+	${OBJECTDIR}/pilha.o \
+	${OBJECTDIR}/processos.o \
+	${OBJECTDIR}/questao1.o \
+	${OBJECTDIR}/questao2.o
 
 
 # C Compiler Flags
@@ -84,6 +87,21 @@ ${OBJECTDIR}/pilha.o: pilha.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/pilha.o pilha.c
+
+${OBJECTDIR}/processos.o: processos.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/processos.o processos.c
+
+${OBJECTDIR}/questao1.o: questao1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/questao1.o questao1.c
+
+${OBJECTDIR}/questao2.o: questao2.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/questao2.o questao2.c
 
 # Subprojects
 .build-subprojects:
