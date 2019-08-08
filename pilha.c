@@ -67,3 +67,14 @@ void *top(Pilha *pilha){
 	return pilha->topo->elemento;
 	
 }
+
+int sizePilha(Pilha *pilha){
+	int cont = 0;
+	Nodo *aux;
+	for(aux = pilha->topo; aux != NULL; aux = aux->proximo){
+		cont++;
+	}
+	return cont;
+}
+
+
