@@ -3,5 +3,6 @@
 #include "fila.h"
 #include "processos.h"
 
-
+void inserirprocesso(Fila *fila, void *elemento){
+}
 
