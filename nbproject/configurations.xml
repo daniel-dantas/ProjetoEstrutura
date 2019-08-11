@@ -9,6 +9,7 @@
       <itemPath>pilha.h</itemPath>
       <itemPath>processos.h</itemPath>
       <itemPath>questao1.h</itemPath>
+      <itemPath>questao2.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
@@ -71,6 +72,8 @@
       </item>
       <item path="questao2.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="questao2.h" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -115,6 +118,8 @@
       <item path="questao1.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="questao2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="questao2.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
