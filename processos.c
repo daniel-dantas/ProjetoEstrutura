@@ -3,6 +3,23 @@
 #include "fila.h"
 #include "processos.h"
 
-void inserirprocesso(Fila *fila, void *elemento){
+
+struct processo{
+    int identificador;
+};
+
+Processo *criaprocesso(int identificador){
+    Processo *p = (Processo *) malloc(sizeof(Processo));
+    p->identificador = identificador;
+    return p;
 }
 
+
+
+void imprimeprocesso(Processo *processo){
+    printf("Identificador: %d\n", processo->identificador);
+}
+
+int getIdentificadorProcesso(Processo *processo){
+    return processo->identificador;
+}

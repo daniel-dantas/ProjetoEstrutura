@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "questao1.h"
 #include "questao2.h"
 #include "fila.h"
@@ -24,10 +25,12 @@ void main(){
         
         switch(opcao){
             case 1:
+                system("cls");
                 torreHanoi();
                 break;
             case 2:
-                
+                system("cls");
+                processos();
                 break;
             default:
                 break;

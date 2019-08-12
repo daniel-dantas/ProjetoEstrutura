@@ -1,3 +1,4 @@
-typedef struct processos Processos;
-Processos *criaprocesso();
-void imprimeprocesso(Processos *processos);
+typedef struct processo Processo;
+Processo *criaprocesso(int identificador);
+void imprimeprocesso(Processo *processo);
+int getIdentificadorProcesso(Processo *processo);
