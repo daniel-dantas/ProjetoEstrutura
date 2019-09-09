@@ -46,12 +46,9 @@ void processos(){
     Processo *processo;
     int identificador;
     do{
-        
         menuProcessos();
         scanf("%d", &opcao);
-        
         switch(opcao){
-            
             case 1:
                 printf("Informe o identificador do processo: ");
                 scanf("%d", &identificador);

@@ -6,6 +6,7 @@
 #include "fila.h"
 
 void menuPrincipal(){
+	system("cls");
     printf("=========== Projeto Estrutura =============\n");
     printf("============== Confronto 1 ================\n");
     printf("Desenvolvedores: Daniel, Jonas e Gabriel\n\n");
@@ -16,14 +17,13 @@ void menuPrincipal(){
 }
 
 void main(){
-    int opcao;
     
-    
+	int escolhido;
     do{
         menuPrincipal();
-        scanf("%d", &opcao);
+        scanf("%d", &escolhido);
         
-        switch(opcao){
+        switch(escolhido){
             case 1:
                 system("cls");
                 torreHanoi();
@@ -36,7 +36,7 @@ void main(){
                 break;
         }
         
-    } while (opcao != 0);
+    } while (escolhido != 0);
 
     
     

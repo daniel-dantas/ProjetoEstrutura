@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "pilha.h"
-#define TAMANHO_MAX 6
+#define TAMANHO_MAX 4
 
 void preencherPino(Pilha *p) {
     int i;
